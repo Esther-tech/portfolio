@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 250ms;
+  margin: 0;
+  padding: 0;
+}
+
+/*Root colors*/
+
+:root {
+  --clr-primary: #F7FAFC ;
+  --clr-txt-primary: black;
+}
+
+/*Typography*/
+
+body {
+  font-family: "Catamaran", sans-serif;
+  text-align: center;
+  color: var(--clr-txt-primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-txt-primary);
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3rem;
+  display: block;
+}
+
+span {
+  font-size: 0.2em;
+}
+
+
+
+/*HEADER*/
+header {
+  background: #F7FAFC;
+  width: 100%;
+  padding: 0 2em;
+}
+
+.nav-list {
+  margin: 0;
+  text-align: right;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 1.5em 1.5em;
+  text-transform: lowercase;
+  font-weight: 700;
+}
+
+
+
+/*HERO*/
+
+.hero-home {
+  min-height: 90vh;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.hero-txt {
+  width: 40%;
+  text-align: left;
+
+}
+
+.hero-img {
+  width: 20%;
+
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+  
+/* CTA */
+  
+.cta {
+  background-color: #b8cccd;
+  padding: 4em 0;
+}
+  
+  
+/* FOOTER */
+  
+footer {
+  padding: 2em;
+  background-color: #4f5a5e;
+  color: white;
+  }
+
+
+
+/* On screens that are 700px or less, mobile version */
+@media screen and (max-width: 700px) {
+  .hero-home {
+    flex-direction: column-reverse;
+  }
+
+  .hero-txt {
+    width: 90%;
+    text-align: center;
+  }
+  
+  .hero-img {
+    width: 40%;
+}
