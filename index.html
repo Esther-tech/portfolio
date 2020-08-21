@@ -4,14 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Esther Siebert</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+
         <header>
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#">About</a></li>
-                    <li class="nav-item"><a href="#">Portfolio</a></li>
+                    <li class="nav-item"><a href="#port">Portfolio</a></li>
                     <li class="nav-item"><a href="#">Resume</a></li>
                     <li class="nav-item"><a href="#">Contact</a></li>
                 </ul>
@@ -21,58 +22,60 @@
         <main>
 
             <section class="hero-home">
+                
                 <div class="hero-txt">
                     <h1>Hi, I'm Esther </h1>
-                    <br>
                     <p class="hero-text">Front-end web developer, specialized in Javascript and React</p>
+                    <button class="btn-large"><a href="#">Let's get in touch!</a></button>
                 </div>
                 <div class="hero-img">
-                <img src="./images/IMG-20190121-WA0003_1_1.jpg" alt="Esther">
+                    <img src="./images/IMG-20190121-WA0003_1_1.jpg" alt="Esther">
                 </div>
+                
             </section>
 
 
         
-            <section class="portfolio">
+            <section class="portfolio" id='port'>
+
                 <h2>Some of my work</h2>
-            
-                <!-- portfolio item 01 -->
-                <figure class="port-item">
-                    <img src="./images/fig1.jpg" alt="portfolio item">
-                    <figcaption class="port-desc">
-                        <p>Project title</p>
-                        <button class="btn-small"><a href="">Project details</a></button> 
-                    </figcaption>
-                </figure>
-            
-                <!-- portfolio item 02 -->
-                <figure class="port-item">
-                    <img src="./images/fig2.jpg" alt="portfolio item">
-                    <figcaption class="port-desc">
-                        <p>Project title</p>
-                        <button class="btn-small"><a href="">Project details</a></button> 
-                    </figcaption>
-                </figure>
-            
-                <!-- portfolio item 03 -->
-                <figure class="port-item">
-                    <img src="./images/fig3.jpg" alt="portfolio item">
-                    <figcaption class="port-desc">
-                        <p>Project title</p>
-                        <button class="btn-small"><a href="">Project details</a></button> 
-                    </figcaption>
-                </figure>
-            
+                
+                <div class="port-container">
+                    <!-- portfolio item 01 -->
+                    <figure class="port-item">
+                        <img src="./images/fig1.jpg" alt="portfolio item">
+                        <figcaption class="port-desc">
+                            <p>Project title</p>
+                            <button class="btn-small"><a href="">Project details</a></button> 
+                        </figcaption>
+                    </figure>
+                
+                    <!-- portfolio item 02 -->
+                    <figure class="port-item">
+                        <img src="./images/fig2.jpg" alt="portfolio item">
+                        <figcaption class="port-desc">
+                            <p>Project title</p>
+                            <button class="btn-small"><a href="">Project details</a></button> 
+                        </figcaption>
+                    </figure>
+                
+                    <!-- portfolio item 03 -->
+                    <figure class="port-item">
+                        <img src="./images/fig3.jpg" alt="portfolio item">
+                        <figcaption class="port-desc">
+                            <p>Project title</p>
+                            <button class="btn-small"><a href="">Project details</a></button> 
+                        </figcaption>
+                    </figure>
+                </div>
                 
             </section>
 
             <section class="cta">
             
-                    <h2 class="title title-cta">Like what you see?
-                        <br>
-                        <span>Then what are you waiting for?</span>
-                    </h2>
-                    <a href="" > <button class="button button-dark"> Hire me </button> </a>
+                    <h2 class="title-cta">Like what you see?</h2>
+                    <p>Then what are you waiting for?</p>
+                     <button class="btn-large"><a href="#">Hire me</a></button> 
             
             </section>
 
@@ -81,19 +84,12 @@
         
         
         <footer>
-                <div class="footer-text">
-                    <p>Shoreditch bespoke leggings, tote bag williamsburg woke retro readymade scenester brunch art party farm-to-table pug. Wayfarers lyft prism, edison bulb distillery pok pok narwhal pinterest poke.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Esther-tech" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/esther-siebert-563597b5/" target="_blank" ><i class="fa fa-linkedin"></i></a>
                 </div>
         
-                <div class="footer-list">
-                    <ul class="unstyled-list">
-                        <li><strong>Head</strong></li>
-                        <li>List</li>
-                        <li>List</li>
-                        <li>List</li>
-                        <li>List</li>
-                    </ul>
-                </div>
+            
         </footer>
 
     </body>
