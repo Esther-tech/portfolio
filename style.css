@@ -20,6 +20,11 @@
 
 /*Typography*/
 
+html {
+  position: relative;
+  min-height: 100vh;
+}
+
 body {
   font-family: "Catamaran", sans-serif;
   text-align: center;
@@ -51,6 +56,10 @@ p {
 
 /* Buttons*/
 
+button {
+  cursor: pointer;
+}
+
 .btn-small {
   padding: 0.7rem;
   font-size: 0.7rem;
@@ -74,6 +83,11 @@ p {
 
 button a {
   color: white;
+}
+
+button:hover, button:focus, a:focus {
+  opacity: 0.5;
+  outline: none;
 }
 
 /*HEADER*/
@@ -150,14 +164,12 @@ button a {
   width: 100%;
   display: block;
 }
-
-
   
 /* CTA */
   
 .cta {
-  margin-top: 4rem;
-  padding: 7rem;
+  margin-top: 3rem;
+  padding: 6rem 0 15rem;
   background-color: var(--clr-primary);
   display: flex;
   align-items: center;
@@ -170,10 +182,13 @@ button a {
 /* FOOTER */
   
 footer {
-  padding: 1em;
+  padding: 0.9em;
   background-color: var(--clr-txt-primary);
   color: white;
   font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer i {
@@ -215,3 +230,16 @@ footer i {
     font-size: 1rem;
   }
   */
+
+
+  .current {
+    opacity: 0.7;
+  }
+
+  .page {
+    padding: 8rem 3rem;
+    width: 50%;
+    text-align: left;
+  }
+
+  
