@@ -62,9 +62,9 @@ button {
 
 .btn-small {
   padding: 0.7rem;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   border-radius: 20px;
-  margin-top: 1rem;
+  margin: 1rem 0.5rem;
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid white;
@@ -88,6 +88,10 @@ button a {
 button:hover, button:focus, a:focus {
   opacity: 0.5;
   outline: none;
+}
+
+.btn-small i {
+  margin-left: 0.5rem;
 }
 
 /*HEADER*/
@@ -158,6 +162,7 @@ button:hover, button:focus, a:focus {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem 0;
   color: white;
+  visibility: hidden;
 }
 
 .portfolio img {
