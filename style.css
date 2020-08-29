@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
+/*General Styling*/
 
 * {
   box-sizing: border-box;
@@ -9,16 +10,12 @@
   padding: 0;
 }
 
-/*Root colors*/
-
 :root {
   --clr-primary: #F9F8F7; 
   --clr-txt-primary: #54575A;
   --clr-accent: #825C79;
   --clr-blue: #b8cccd;
 }
-
-/*Typography*/
 
 html {
   position: relative;
@@ -32,6 +29,16 @@ body {
   color: var(--clr-txt-primary);
   background-color: var(--clr-primary);
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+/*Typography*/
 
 a {
   text-decoration: none;
@@ -55,11 +62,17 @@ p {
   font-size: 1.2em;
 }
 
-/* Buttons*/
+/* Buttons and links*/
 
 button {
   cursor: pointer;
 }
+
+a {
+  padding: 0 0.5rem;
+  border-radius: 5px;
+}
+
 
 .btn-small {
   padding: 0.7rem;
@@ -86,13 +99,27 @@ button a {
   color: white;
 }
 
-button:hover, button:focus, a:focus {
+button:hover {
   opacity: 0.5;
-  outline: none;
 }
 
-.btn-small i {
-  margin-left: 0.5rem;
+button:focus,
+a:focus {
+  outline: none;
+  box-shadow: 
+    0 0 0 5px var(--clr-primary),
+    0 0 0 7px var(--clr-blue);
+}
+
+footer a:focus {
+  box-shadow: 
+    0 0 0 5px var(--clr-txt-primary),
+    0 0 0 7px var(--clr-blue);
+}
+
+button a:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /*HEADER*/
@@ -100,6 +127,7 @@ button:hover, button:focus, a:focus {
 .nav-list {
   text-align: right;
   position: fixed;
+  z-index: 99;
   background: var(--clr-primary);
   width: 100%;
   padding: 0 2.2rem;
@@ -108,7 +136,7 @@ button:hover, button:focus, a:focus {
 
 .nav-item {
   display: inline-block;
-  padding: 1.5em 1.5em;
+  padding: 1.5em 1rem;
   text-transform: lowercase;
   font-weight: 700;
 }
@@ -116,7 +144,7 @@ button:hover, button:focus, a:focus {
 /*HERO*/
 
 .hero-home {
-  min-height: 95vh;
+  min-height: 88vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,8 +169,8 @@ button:hover, button:focus, a:focus {
   border-radius: 100%;
 }
 
-
 /*Portfolio*/
+
 .portfolio {
   margin-top: 5rem;
 }
@@ -152,17 +180,16 @@ button:hover, button:focus, a:focus {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1.5rem;
-  overflow: hidden;
 }
 
 .port-item {
   flex: 1 1 300px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .port-desc {
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 2rem 0;
+  padding: 1rem 0 1.5rem;
   color: white;
   visibility: hidden;
   transition: all 350ms ease-in;
@@ -180,26 +207,25 @@ button:hover, button:focus, a:focus {
 
 .white {
   background-color:  var(--clr-primary);
-  position: absolute;
-  z-index: 99;
-  height: 168px;
+  position: relative;
+  z-index: 50;
+  height: 144px;
   width: 100%;
-  transform: translatey(-100%);
+  transform: translateY(-100%);
+  margin-bottom: -168px;
 }
   
 /* CTA */
   
 .cta {
-  padding-bottom: 20rem;
+  padding: 5rem 0 20rem;
   background-color: var(--clr-primary);
   display: flex;
   align-items: center;
   justify-content: center;  
   flex-direction: column;
-  min-height: 40vh;
 }
-  
-  
+   
 /* FOOTER */
   
 footer {
@@ -218,6 +244,7 @@ footer i {
 }
 
 /* On screens that are 700px or less, mobile version */
+
 @media screen and (max-width: 700px) {
   .hero-home {
     flex-direction: column-reverse;
@@ -230,6 +257,15 @@ footer i {
   
   .hero-img {
     width: 40%;
+  }
+
+  .port-desc {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+
+  .white {
+    display: none;
   }
     /*change  nav bar*/
 }
