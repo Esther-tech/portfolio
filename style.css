@@ -23,6 +23,7 @@
 html {
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -151,6 +152,7 @@ button:hover, button:focus, a:focus {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1.5rem;
+  overflow: hidden;
 }
 
 .port-item {
@@ -163,18 +165,32 @@ button:hover, button:focus, a:focus {
   padding: 2rem 0;
   color: white;
   visibility: hidden;
+  transition: all 350ms ease-in;
+}
+
+.port-item:hover .port-desc {
+  transform: translateY(-100%);
+  visibility: visible;
 }
 
 .portfolio img {
   width: 100%;
   display: block;
 }
+
+.white {
+  background-color:  var(--clr-primary);
+  position: absolute;
+  z-index: 99;
+  height: 168px;
+  width: 100%;
+  transform: translatey(-100%);
+}
   
 /* CTA */
   
 .cta {
-  margin-top: 3rem;
-  padding: 6rem 0 15rem;
+  padding-bottom: 20rem;
   background-color: var(--clr-primary);
   display: flex;
   align-items: center;
