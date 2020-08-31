@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 /*General Styling*/
@@ -36,6 +36,15 @@ body {
 
 ::-moz-focus-inner {
   border: 0;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 600ms ease-in; 
+}
+
+.fade-in.appear {
+  opacity: 1;
 }
 
 /*Typography*/
