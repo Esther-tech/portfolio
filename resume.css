@@ -1,0 +1,27 @@
+
+
+
+.resume {
+    padding: 8%;
+    text-align: left;
+}
+
+section {
+    margin: 3rem 0;
+}
+.subtitle {
+    font-weight: 700;
+}
+
+.certificate {
+    width: 100px;
+}
+
+.time-span {
+    font-size: 0.8rem;
+    display: block;
+}
+
+.item {
+    margin: 1.5rem 0;
+}

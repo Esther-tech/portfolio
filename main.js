@@ -1,10 +1,20 @@
+//-----------------Loader -----------------------
+
+// window.addEventListener('load', function() {
+//     const loader = document.querySelector('.loader');
+//     loader.classList.add('hidden');
+// })
+
+
+
+
 //-----------------Fade-in items ----------------
 
 //Variables
 
 const faders = document.querySelectorAll('.fade-in');
 const appearOptions = {
-    threshold: 0.4
+    threshold: 0.2
 };
 
 
@@ -27,4 +37,3 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
-
