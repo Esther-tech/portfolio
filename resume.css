@@ -4,14 +4,32 @@
 .resume {
     padding: 8%;
     text-align: left;
+    display: grid;
+    grid-template-columns: 40% 50% 1fr;
 }
 
 section {
-    margin: 3rem 0;
+    margin-top: 2rem;
+    grid-column: 2 / 3;
 }
-.subtitle {
+
+.item {
+    margin: 1.5rem 0;
+}
+
+.item li {
+    list-style: circle;
+}
+
+.item ul {
+    margin-left: 3rem;
+}
+
+#subtitle {
     font-weight: 700;
+    list-style: none;
 }
+
 
 .certificate {
     width: 100px;
@@ -22,6 +40,3 @@ section {
     display: block;
 }
 
-.item {
-    margin: 1.5rem 0;
-}
