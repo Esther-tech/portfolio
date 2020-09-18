@@ -5,7 +5,7 @@
     padding: 8%;
     text-align: left;
     display: grid;
-    grid-template-columns: 40% 50% 1fr;
+    grid-template-columns: 30% 60% 1fr;
 }
 
 section {
