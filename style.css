@@ -74,15 +74,14 @@ p {
 
 /* Buttons and links*/
 
-button {
+.btn {
   cursor: pointer;
-}
-
-a {
+  color: white;
+  display: inline-block;
   padding: 0 0.5rem;
   border-radius: 5px;
+  font-family: "Catamaran", sans-serif;
 }
-
 
 .btn-small {
   padding: 0.7rem;
@@ -105,31 +104,21 @@ a {
   font-family: "Catamaran", sans-serif;
 }
 
-button a {
-  color: white;
-}
-
-button:hover {
+.btn:hover {
   opacity: 0.5;
 }
 
-button:focus,
-a:focus {
+.btn:focus {
   outline: none;
   box-shadow: 
     0 0 0 5px var(--clr-primary),
     0 0 0 7px var(--clr-blue);
 }
 
-footer a:focus {
+footer .btn:focus {
   box-shadow: 
     0 0 0 5px var(--clr-txt-primary),
     0 0 0 7px var(--clr-blue);
-}
-
-button a:focus {
-  outline: none;
-  box-shadow: none;
 }
 
 /*HEADER*/
@@ -225,6 +214,45 @@ button a:focus {
   margin-bottom: -168px;
 }
   
+/*Education & Work*/
+
+.education, 
+.work {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  width: 50%;
+  min-width: 600px;
+}
+
+.flex-item {
+  text-align: left;
+  width: 45%;
+}
+
+.right {
+  text-align: right;
+}
+
+.label {
+  font-size: 0.8rem;
+  cursor: auto;
+  margin: 0.1rem 0.1rem;
+  padding: 0.2rem 0.6rem;
+  background-color: var(--clr-blue);
+  
+  border-radius: 10px;
+  display: inline-block;
+}
+
 /* CTA */
   
 .cta {
