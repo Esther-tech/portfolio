@@ -127,7 +127,7 @@ footer .btn:focus {
   text-align: right;
   position: fixed;
   z-index: 99;
-  background: var(--clr-primary);
+  background: var(--clr-blue);
   width: 100%;
   padding: 0 2.2rem;
   box-shadow: 0px 2px 8px rgb(175, 173, 173);
@@ -218,7 +218,7 @@ footer .btn:focus {
 
 .education, 
 .work {
-  padding-top: 4rem;
+  padding: 3rem 0 5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -248,7 +248,6 @@ footer .btn:focus {
   margin: 0.1rem 0.1rem;
   padding: 0.2rem 0.6rem;
   background-color: var(--clr-blue);
-  
   border-radius: 10px;
   display: inline-block;
 }
@@ -256,8 +255,8 @@ footer .btn:focus {
 /* CTA */
   
 .cta {
-  padding: 5rem 0 20rem;
-  background-color: var(--clr-primary);
+  padding: 5rem 0 15rem;
+  background-color: var(--clr-blue);
   display: flex;
   align-items: center;
   justify-content: center;  
