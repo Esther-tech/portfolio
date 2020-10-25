@@ -218,7 +218,7 @@ footer .btn:focus {
 
 .education, 
 .work {
-  padding: 3rem 0 5rem;
+  padding: 1rem 0 5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -231,11 +231,16 @@ footer .btn:focus {
   align-items: top;
   width: 50%;
   min-width: 600px;
+  padding-top: 3rem;
 }
 
 .flex-item {
   text-align: left;
   width: 45%;
+}
+
+.sub-item {
+  margin-top: 1rem;
 }
 
 .right {
