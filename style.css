@@ -180,39 +180,6 @@ footer .btn:focus {
   justify-content: center;
   margin-top: 1.5rem;
 }
-
-.port-item {
-  flex: 1 1 300px;
-  margin-top: 1rem;
-}
-
-.port-desc {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 1rem 0 1.5rem;
-  color: white;
-  visibility: hidden;
-  transition: all 350ms ease-in;
-}
-
-.port-item:hover .port-desc {
-  transform: translateY(-100%);
-  visibility: visible;
-}
-
-.portfolio img {
-  width: 100%;
-  display: block;
-}
-
-.white {
-  background-color:  var(--clr-primary);
-  position: relative;
-  z-index: 50;
-  height: 144px;
-  width: 100%;
-  transform: translateY(-100%);
-  margin-bottom: -168px;
-}
   
 /*Education & Work*/
 
