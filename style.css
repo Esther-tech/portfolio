@@ -180,6 +180,10 @@ footer .btn:focus {
   justify-content: center;
   margin-top: 1.5rem;
 }
+
+.port-item .btn {
+  color: black;
+}
   
 /*Education & Work*/
 
