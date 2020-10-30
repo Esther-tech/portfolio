@@ -184,15 +184,12 @@ footer .btn:focus {
 
 .port-item {
   width: 20%;
-  background-color: rgba(0, 0, 0, 0.479);
+  background-color: rgba(0, 0, 0, 0.2);
   margin: 0 1.5rem;
-  padding: 3rem 0;
-
+  padding: 4gitrem 0;
+  border-radius: 5px;
 }
 
-.port-item .btn {
-  
-}
   
 /*Education & Work*/
 
