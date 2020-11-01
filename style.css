@@ -171,7 +171,7 @@ footer .btn:focus {
 /*Portfolio*/
 
 .portfolio {
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 
 .port-container {
@@ -179,15 +179,36 @@ footer .btn:focus {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 
 .port-item {
   width: 20%;
-  background-color: rgba(0, 0, 0, 0.2);
   margin: 0 1.5rem;
-  padding: 4gitrem 0;
+  padding: 4rem 0;
   border-radius: 5px;
+}
+
+.port-item h3 {
+  color: rgb(214, 212, 212);
+}
+
+.to-do {
+  background: url(./images/fig1.jpg) rgba(0,0,0,0.5);
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.card-slider {
+  background: url(./images/fig4.jpg) rgba(0,0,0,0.5);
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.zenhq {
+  background: url(./images/fig3.jpg) rgba(0,0,0,0.5);
+  background-position: center;
+  background-blend-mode: multiply;
 }
 
   
