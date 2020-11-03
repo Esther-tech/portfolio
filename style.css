@@ -68,8 +68,12 @@ h2 {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.1rem;
   font-weight: 200;
+}
+
+span {
+  font-size: 0.8rem;
 }
 
 /* Buttons and links*/
