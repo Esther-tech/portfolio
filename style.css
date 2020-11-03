@@ -200,7 +200,7 @@ footer .btn:focus {
 }
 
 .card-slider {
-  background: url(./images/fig4.jpg) rgba(0,0,0,0.5);
+  background: url(./images/fig2.jpg) rgba(0,0,0,0.5);
   background-position: center;
   background-blend-mode: multiply;
 }
@@ -237,7 +237,8 @@ footer .btn:focus {
   width: 45%;
 }
 
-.sub-item {
+.sub-item,
+.mrg-tp {
   margin-top: 1rem;
 }
 
