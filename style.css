@@ -119,6 +119,14 @@ span {
     0 0 0 7px var(--clr-blue);
 }
 
+.disabled {
+  opacity: 0.5;
+}
+
+.disabled:hover {
+  cursor: auto;
+}
+
 footer .btn:focus {
   box-shadow: 
     0 0 0 5px var(--clr-txt-primary),
@@ -187,8 +195,8 @@ footer .btn:focus {
 }
 
 .port-item {
-  width: 20%;
-  margin: 0 1.5rem;
+  width: 350px;
+  margin: 0.5rem 1.5rem;
   padding: 4rem 0;
   border-radius: 5px;
 }
@@ -203,16 +211,20 @@ footer .btn:focus {
   background-blend-mode: multiply;
 }
 
-.card-slider {
+.playlist {
+  background: url(./images/fig3.jpg) rgba(0,0,0,0.5);
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.zenpay {
   background: url(./images/fig2.jpg) rgba(0,0,0,0.5);
   background-position: center;
   background-blend-mode: multiply;
 }
 
-.playlist {
-  background: url(./images/fig3.jpg) rgba(0,0,0,0.5);
-  background-position: center;
-  background-blend-mode: multiply;
+.white-txt {
+  color: #FFF;
 }
 
   
@@ -229,16 +241,18 @@ footer .btn:focus {
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: top;
   width: 50%;
   min-width: 600px;
-  padding-top: 3rem;
+  margin-top: 1rem;
 }
 
 .flex-item {
   text-align: left;
-  width: 45%;
+  width: 300px;
+  margin-top: 2rem
 }
 
 .sub-item,
@@ -302,6 +316,11 @@ footer i {
   
   .hero-img {
     width: 40%;
+  }
+  .flex-container {
+    min-width: 90%;
+    width: 90%;
+    justify-content: center;
   }
 
   .port-desc {
